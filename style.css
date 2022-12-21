@@ -77,11 +77,16 @@ header img {
     width: 4%;
     border-radius: 100%;
     border: 2px solid #c50000;
-    top: 2%;
+    top: 9%;
     left: 2%;
 }
 
 /*Définition Main*/
+
+main {
+  margin: 10%;
+
+}
 
 #hello {
   position: relative;
@@ -90,6 +95,7 @@ header img {
 }
 h4 {
   font-family: 'S-T';
+  font-style: oblique;
   color: grey;
 }
 
@@ -99,10 +105,26 @@ code {
     border-radius: 0.2em;
 }
 
-/*#border {
-  line-height: 0.4em;
-  border-left: solid 3px #c50000;
-}*/
+#border {
+  border-left: 6px solid #c50000;
+}
+
+
+div h3,h6 {
+  line-height: 1px;
+  font-family: 'S-T';
+}
+
+div h6{
+  color: grey;
+  font-style: oblique;
+}
+
+#Compétences {
+  position: relative;
+  color: #c50000;
+}
+
 
 
 
@@ -199,7 +221,7 @@ svg {
 }
 /* Définition de la scrollbar */
 ::-webkit-scrollbar {
-  width:10px;
+  width: 5px;
   height: 1px;
 }
 
