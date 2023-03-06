@@ -1,5 +1,5 @@
 @media(prefers-color-scheme: dark) {
-  * {
+  body {
     background: #000;
     color: white;
   }
@@ -11,8 +11,12 @@
   src: url(fonts/SairaCondensed-Light.ttf);
 
 }
+
 * {
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 hr {
@@ -24,6 +28,16 @@ hr {
   background-color: #969696;
 }
 /* Définition du header */
+header {
+  position: fixed;
+  background-color: #0000008c;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6em;
+  z-index: 1;
+}
+
 header nav {
 	display: flex;
 	flex-wrap: nowrap;
@@ -64,36 +78,82 @@ header nav a {
 }
 
 header nav a:hover {
-	border-top: solid #c50000;
-    justify-content: center;
+  border : 1px solid transparent;
+  border-image: linear-gradient(to right, #C0FBFF, #8FF2FF, #70EBFF, #53E4FF, #67A4FF) 1 0 0 0 stretch;
+
+  justify-content: center;
 	border-radius: 3px;
 	border-width: 3px;
-    transform: translateY(-12px);
+  transform: translateY(-12px);
 	padding-top: 10.5px;
 } 
 
 header img {
     position: absolute;
     width: 4%;
-    border-radius: 100%;
-    border: 2px solid #c50000;
-    top: 9%;
-    left: 2%;
+    /* border avec linear-gradient */
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(to right, #C0FBFF, #8FF2FF, #70EBFF, #53E4FF, #67A4FF) border-box;
+  border-radius: 50em;
+  border: 2px solid transparent;
+
+  top: 9%;
+  left: 2%;
 }
 
 /*Définition Main*/
 
 main {
-  font-family: ;
+  font-family: 'S-T';
   margin: 10%;
 
 }
 
 #hello {
-  position: relative;
-  bottom : 40%;
-  left: 40%;
+  font-size: 1em;
+  background: linear-gradient(120deg,#67A4FF, #8e44ad);
+  background-size: 200% 200%;
+  animation: color 2s ease-in-out infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: color .2s ease-in-out;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 5%;
+  z-index: -1;
+
 }
+
+@keyframes color{ 
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
+
+/* Vidéo */
+#Vid {
+  z-index: inherit;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100px;
+  /* Couvre juste l'article hello */ 
+}
+
+#hello hr {
+  position : relative;
+  left: 0.4%;
+  width: 20%;
+  height: 0.5px;
+  border-radius: 40%;
+  background-color: #969696;
+}
+
+
 h4 {
   font-family: 'S-T';
   font-style: oblique;
@@ -107,7 +167,9 @@ code {
 }
 
 #border {
-  border-left: 6px solid #c50000;
+  background:
+  
+              linear-gradient(to right, #C0FBFF, #8FF2FF, #70EBFF, #53E4FF, #67A4FF) 0 0 1 0 stretch;
 }
 
 
@@ -217,6 +279,7 @@ div h6{
 
 
 
+
 svg {
   width: 2%;
 }
@@ -227,79 +290,15 @@ svg {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(197, 255, 255);
+  background: #4242428c;
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(197, 0, 0);
+  background: linear-gradient(to right, #C0FBFF, #8FF2FF, #70EBFF, #53E4FF, #67A4FF);
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(197, 0, 0);
-}
-
-/*
-#bouton {
-    position: relative;
-    display: block;
-    width: 200px;
-    height: 100px;
-    border-radius: 100px;
-    background: #222;
-    transition: 0.5s;
-    cursor: pointer;
-    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 1),
-                inset 0 8px 8px rgba(0, 0, 0, 1),
-                inset 0 -4px 4px rgba(0, 0, 0, 1);
-}
-
-#bouton .indicator {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(to bottom, #444, #222);
-    border-radius: 50%;
-    transform: scale(0.9);
-    box-shadow: inset 0 8px 40px rgba(0, 0, 0, 0.5),
-                inset 0 4px 4px rgba(255, 255, 255, 0.2),
-                inset 0 -4px 4px rgba(255, 255, 255, 0.2);
-    transition: 0.5s;
-
-}
-
-#bouton .indicator {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(to bottom, #444, #222);
-    border-radius: 50%;
-    transform: scale(0.9);
-    box-shadow: inset 0 8px 40px rgba(0, 0, 0, 0.5),
-                inset 0 4px 4px rgba(255, 255, 255, 0.2),
-                inset 0 -4px 4px rgba(255, 255, 255, 0.2);
-    transition: 0.5s;
-
-}
-.DarkMode {
-  appearance: none;
-  width: 30px;
-  height: 30px;
-  background: white;
-  border-radius: 5px;
-  border: 2px solid #555;
-}
-
-.darkMode:checked {
-  background: #333;
-}
-
-.dark {
-  color: white;
-  background: #444;
+  background: linear-gradient(to right, #C0FBFF, #8FF2FF, #70EBFF, #53E4FF, #67A4FF);
 }

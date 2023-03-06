@@ -9,6 +9,9 @@
         <link rel="icon" href="img/13.jpg">
         <!-- CSS -->
         <link rel="stylesheet" href="style.css">
+        <!-- Javascript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script src="darkmode.js"></script>
     </head>
 
     <body>
@@ -22,28 +25,26 @@
                 </ul>
             </nav>
             <img src="img/13.jpg" alt="photo de profil" title="Evan Saleck">
-            <!--<div id="bouton">
-                <i class="indicator"></i>
-            </div>
-            <script>
-                const bouton = document.getElementById('bouton');
-                toggle.onclick = function() {
-                    toggle.classList.toggle('active');
-                }
-            </script>-->
         </header>
         <main>
             <article id=hello>
-                <h4> - Bienvenue dans mon monde </h4>
-                <hr>
-                <h1>Bonjour, je suis Evan Saleck</h1>
-                <h2>Etudiant en informatique</h2>
-                <p>Je suis en 1<sup>ère</sup> année BUT Informatique à Lannion, </p>
+                <video autoplay muted loop id="Vid">
+                    <source src="vids/competences.mp4" type="video/mp4">
+                </video>
+  
+                <div class="content">
+                    <h1><span class=auto-type></span></h1>
+                    <script src="typewrite.js"></script>
+                    <hr>
+                    <h1>Salut, moi c'est Evan Saleck !</h1>
+                </div>
             </article>
             <article id="about">
                 <div id ="border">
-                <h3>À propos de moi</h3>
-                <h6>Apprenez en plus a propos des mes études et mes interêts</h6>
+                <h3>À mon propos</h3>
+                <h2></h2>
+                <p>J'ai 18 ans. <br> Je suis en 1<sup>ère</sup> année BUT Informatique à Lannion, j'adore créer de nouveaux projets et par dessus tout J'adore L'informatique.</p>
+                <h6>Apprenez en plus sur mes études et mes interêts</h6>
                 </div>
                 <p>J'ai obtenu mon baccalauréat STI2D (Sciences technologiques de l'Industrie et du Développement Durable) option SIN (Systèmes d'Information Numérique)</p>
                 <p>Je continue actuellement mon cursus avec objectifs d'effectuer une école d'ingénieur après mes 3 années de BUT</p>
@@ -56,7 +57,7 @@
                     <br>
                         &nbsp printf(" 🚘 Conduite");
                     <br>
-                        &nbsp printf(" 📑 Apprendre de nouveaux Skills et Langages");
+                        &nbsp printf(" 📑 Apprendre de nouvelles Compétences et Langages");
                     <br>    
                         &nbsp printf(" 🎸 Musique");
                     <br>    
@@ -68,6 +69,10 @@
                     <br>
                         &nbsp printf(" 🎮 Jeux Vidéos");
                 </code>
+
+                <div class="diplome-Bac">
+                    <h5>Voici mon Baccalauréat</h5>
+                </div>
             </article>
             <article id="Compétences">
                     <div id ="border">
@@ -78,7 +83,7 @@
                     <code>
                         {
                         <br>
-                            &nbsp "Langages" : ["C", "Java", "Python", "HTML 5", "CSS", "JavaScript", "PHP", "SQL"],
+                            &nbsp "Langages" : ["C", "Java", "Python", "HTML 5", "CSS", "JavaScript", "PHP", "SQL", "LUA", "JSON", "Markdown"],
                         <br>
                             &nbsp "Logiciels" : ["Visual Studio Code", "Geany", "Atom", "Git", "GitHub", "MySQL Workbench", "MySQL Server", "WampServer", "XAMPP", "Blender", "Figma"],
                         <br>
