@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Evan Saleck</title>
+        <meta keywords="css, html, javascript, web development, web design, portfolio, projects, resume, contact">
+        <meta authors="Evan Saleck">
+        <meta charset="utf-8">
+        <!-- Logo -->
+        <link rel="icon" href="img/13.jpg">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!--JS-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#haut"><span>Accueil</span></a></li>
+                    <li><a href="#comp">Compétences</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>Evan <span>Saleck</span></h1>
+            <img src="img/13.jpg" alt="photo de profil" title="Evan Saleck">
+        </header>
+        <main>
+            <div id="overlay">
+                <video autoplay muted loop id="Vid">
+                    <source src="vids/competences.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="haut"></div>
+            
+            <section id="welcome">
+                <h2>Evan Saleck</h2>
+                <h4>Etudiant à L'IUT de Lannion</h4>
+                <img src="img/evan.jpg" alt="photo de profil" title="Evan Saleck">
+                <p>Vous souhaitez recruter un alternant ? <br> 
+                Je suis la pour vous, j'aime apprendre et je suis passionné par la psychologie, la finance, la musique. <br>
+                Et bien sûr, plus qu'un métier j'adore développer. <br>
+                N'hésitez pas contactez moi ! </p>
+                <div class="btn"><a href="#contact">Contactez-Moi !</a></div>
+                <div class="btn2"><a href="#portfolio" >Portfolio</a></div>
+            </section>
+
+            <a href="#comp">
+                <div class="arrow"></div>
+            </a>
+
+            <section id="comp">
+                <h2>Compétences</h2>
+
+                <p class="pres"> Vous pourrez ici retrouvez tout les langages et aptitudes que je possède en Informatique. <br> Vous retrouverez aussi mon Curriculum Vitae</p>
+
+                <div class="bubulle">
+                    <p class="bulle1">HTML</p>
+                    <p class="bulle2">CSS</p>
+                    <p class="bulle3">JS</p>
+                    <p class="bulle7">SQL</p>
+                    <p class="bulle4">PHP</p>
+                    <p class="bulle5">C</p>
+                    <p class="bulle6">LUA</p>
+                    <p class="bulle8">JAVA</p>
+                    <p class="bulle9">PYTHON</p>
+                    <p class="bulle14">GIT</p>
+                    <p class="bulle17">Docker</p>
+                    <p class="bulle11">UNITY</p>
+                    <p class="bulle10">Figma</p>
+                    <p class="bulle15">Visual Studio Code</p>
+                    <p class="bulle16">Eclipse IDE</p>
+                    <p class="bulle12">Linux</p>
+                    <p class="bulle13">Windows</p>
+                    <p class="bulle18">Bootstrap</p>
+                    <p class="bulle19">TailWind CSS</p>
+                    <p class="bulle20">NodeJs</p>
+                </div>
+
+                <div class="cv">
+                    <h3 class="cv-label">Mon CV</h3>
+                    <embed src="assets/Cv_Evan_Saleck_Web.pdf#toolbar=0" type="application/pdf"/>
+                    <a href="assets/Cv_Evan_Saleck_Web.pdf" download class="cv-download">Télécharger</a>
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <h3>Portfolio</h3>
+                <div class="proj">
+                    <h4>Portfolio</h4>
+                    <p>Création d'un site Web afin de me présenter et présenter les projets que j'ai pu mener 
+                        <br> <span><a href="">Cliquez ici pour voir la maquette</a></span>
+                    </p>
+                </div>
+
+                <div class="proj1">
+                    <h4>Développement de Serveur FiveM</h4>
+                    <p>Dans le cadre d'un projet personnel j'ai eu l'occasion de développer sur un serveur FiveM en LUA, HTML, CSS, JS</p>
+                </div>
+
+                <div class="proj2">
+                    <h4>Développement de Bot Discord</h4>
+                    <p>Bot permettant l'administration de serveurs Discord<br> <span><a href="https://github.com/EvanSaleck/MiniBotito">Projet toujours en Cours mais le code est disponible sur github (Cliquez ici)</a></span></p>
+                </div>
+
+                <div class="proj3">
+                    <h4>Puissance 4 en C</h4>
+                    <p>Code d'un puissance 4 en C s'affichant sur Terminal et création de son robot pour jouer contre vous grâce à l'algorithme Minimax <span><a href="https://github.com/EvanSaleck/Minimax-Puissance4">Projet toujours en amélioration mais utilisable (Cliquez ici)</a></span></p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h3>Contact</h3>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.3599098118552!2d-4.162429345090646!3d48.449623610295944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48114dc90e47d0b7%3A0xaa1fd4fd41fff0df!2s10%20Kloz%20Bihan%2C%2029800%20La%20Martyre!5e0!3m2!1sfr!2sfr!4v1678902492174!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="phone">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                    width="1280.000000pt" height="1280.000000pt" viewBox="0 0 1280.000000 1280.000000"
+                    preserveAspectRatio="xMidYMid meet">
+                    <metadata>
+                    Created by potrace 1.15, written by Peter Selinger 2001-2017
+                    </metadata>
+                    <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                    fill="#007CED" stroke="none">
+                    <path d="M4202 11749 c-171 -22 -300 -87 -428 -214 -75 -74 -99 -106 -136
+                    -182 -26 -50 -55 -127 -65 -170 -17 -75 -18 -257 -18 -4788 0 -4487 1 -4713
+                    18 -4780 10 -38 38 -113 64 -165 39 -80 59 -108 137 -185 76 -76 106 -99 186
+                    -138 183 -90 -52 -82 2440 -82 2492 0 2257 -8 2440 82 80 39 110 62 186 138
+                    78 77 98 105 137 185 26 52 54 127 64 165 17 67 18 293 18 4785 0 4492 -1
+                    4718 -18 4785 -10 39 -38 113 -64 165 -39 80 -59 108 -137 185 -103 103 -199
+                    160 -333 198 l-78 22 -2175 1 c-1196 1 -2203 -2 -2238 -7z m2686 -701 c18 -18
+                    15 -94 -4 -112 -14 -14 -71 -16 -484 -16 -413 0 -470 2 -484 16 -19 18 -22 94
+                    -4 112 17 17 959 17 976 0z m1852 -4648 l0 -3810 -2340 0 -2340 0 0 3810 0
+                    3810 2340 0 2340 0 0 -3810z m-2270 -4141 c196 -31 349 -185 382 -383 37 -225
+                    -113 -452 -337 -511 -260 -67 -520 103 -566 371 -41 239 132 483 371 523 76
+                    12 77 12 150 0z"/>
+                    </g>
+                    </svg>
+                    <p>07 68 14 05 03</p>
+                </div>
+
+                <div class="adresse">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+                        <defs>
+                        </defs>
+                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                            <path d="M 45 90 c -1.062 0 -2.043 -0.561 -2.583 -1.475 l -4.471 -7.563 c -9.222 -15.591 -17.933 -30.317 -20.893 -36.258 c -2.086 -4.277 -3.138 -8.852 -3.138 -13.62 C 13.916 13.944 27.86 0 45 0 c 17.141 0 31.085 13.944 31.085 31.084 c 0 4.764 -1.051 9.339 -3.124 13.596 c -0.021 0.042 -0.042 0.083 -0.063 0.124 c -3.007 6.005 -11.672 20.654 -20.843 36.159 l -4.472 7.563 C 47.044 89.439 46.062 90 45 90 z M 45 6 C 31.168 6 19.916 17.253 19.916 31.084 c 0 3.848 0.847 7.539 2.518 10.969 c 2.852 5.721 11.909 21.033 20.667 35.839 L 45 81.104 l 1.89 -3.196 c 8.763 -14.813 17.823 -30.131 20.687 -35.879 c 0.012 -0.022 0.023 -0.045 0.035 -0.067 c 1.642 -3.406 2.474 -7.065 2.474 -10.877 C 70.085 17.253 58.832 6 45 6 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #007CED; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 45 44.597 c -8.076 0 -14.646 -6.57 -14.646 -14.646 S 36.924 15.306 45 15.306 c 8.075 0 14.646 6.57 14.646 14.646 S 53.075 44.597 45 44.597 z M 45 21.306 c -4.767 0 -8.646 3.878 -8.646 8.646 s 3.878 8.646 8.646 8.646 c 4.768 0 8.646 -3.878 8.646 -8.646 S 49.768 21.306 45 21.306 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #007CED; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        </g>
+                    </svg>
+                    <p>10 Kloz Bihan - 29800 La Martyre</p>
+                </div>
+
+                <div class="mail">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+                        <defs>
+                        </defs>
+                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                            <path d="M 75.546 78.738 H 14.455 C 6.484 78.738 0 72.254 0 64.283 V 25.716 c 0 -7.97 6.485 -14.455 14.455 -14.455 h 61.091 c 7.97 0 14.454 6.485 14.454 14.455 v 38.567 C 90 72.254 83.516 78.738 75.546 78.738 z M 14.455 15.488 c -5.64 0 -10.228 4.588 -10.228 10.228 v 38.567 c 0 5.64 4.588 10.229 10.228 10.229 h 61.091 c 5.64 0 10.228 -4.589 10.228 -10.229 V 25.716 c 0 -5.64 -4.588 -10.228 -10.228 -10.228 H 14.455 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #007CED; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 11.044 25.917 C 21.848 36.445 32.652 46.972 43.456 57.5 c 2.014 1.962 5.105 -1.122 3.088 -3.088 C 35.74 43.885 24.936 33.357 14.132 22.83 C 12.118 20.867 9.027 23.952 11.044 25.917 L 11.044 25.917 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #007CED; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 46.544 57.5 c 10.804 -10.527 21.608 -21.055 32.412 -31.582 c 2.016 -1.965 -1.073 -5.051 -3.088 -3.088 C 65.064 33.357 54.26 43.885 43.456 54.412 C 41.44 56.377 44.529 59.463 46.544 57.5 L 46.544 57.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #007CED; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 78.837 64.952 c -7.189 -6.818 -14.379 -13.635 -21.568 -20.453 c -2.039 -1.933 -5.132 1.149 -3.088 3.088 c 7.189 6.818 14.379 13.635 21.568 20.453 C 77.788 69.973 80.881 66.89 78.837 64.952 L 78.837 64.952 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #007CED; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 14.446 68.039 c 7.189 -6.818 14.379 -13.635 21.568 -20.453 c 2.043 -1.938 -1.048 -5.022 -3.088 -3.088 c -7.189 6.818 -14.379 13.635 -21.568 20.453 C 9.315 66.889 12.406 69.974 14.446 68.039 L 14.446 68.039 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #007CED; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        </g>
+                    </svg>
+                    <p>evan.saleck@gmail.com</p>
+                </div>
+
+                <?php
+                if (isset($_POST['submit'])) { // Vérifie si le formulaire a été soumis
+                    // Récupère les données du formulaire
+                    $name = $_POST['name'];
+                    $email = $_POST['email'];
+                    $message = $_POST['message'];
+            
+                    // Vérifie si tous les champs ont été remplis
+                    if (empty($name) || empty($email) || empty($message)) {
+                        echo "Veuillez remplir tous les champs du formulaire.";
+                    } else {
+                        $to = "evan.saleck@email.com";
+                        $subject = "Nouveau message de formulaire de contact";
+                        $body = "Nom: $name\nEmail: $email\n\n$message";
+            
+                        // Envoie l'e-mail
+                        if (mail($to, $subject, $body)) {
+                            echo "Votre message a bien été envoyé.";
+                        } else {
+                            echo "Une erreur est survenue lors de l'envoi de votre message.";
+                        }
+                    }
+                }
+                ?>
+                <form action="mailto.php" method="post">
+                    <input type="text" name="name" placeholder="Nom / Entreprise">
+                    <input type="email" name="email" placeholder="Votre Email">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+                
+            </section>
+
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/evan-saleck-ab3031258/">LinkedIn </a></li>
+                    <li><a href="https://github.com/EvanSaleck">Github</a></li>
+                </ul>
+            </nav>
+            <p>© 2020 - Evan Saleck</p>
+        </footer>
+    </body>
+
+</html>
