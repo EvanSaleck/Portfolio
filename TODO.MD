@@ -4,4 +4,6 @@ ALREADY DONE :
 -SMTP
 TO DO : 
 -RESPONSIVE
--PHP SMTP
+-PHP 
+-SMTP
+-Carousel
