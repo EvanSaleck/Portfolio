@@ -980,8 +980,109 @@ footer p{
     color: rgba(255, 255, 255, 0.8);
 }
 
+/* Définition de la media query pour les smartphones */
+
+@media screen and (max-width: 480px)  and (min-width: 270px) {
+    /* Définition du header { Menu pour smartphones ] */
+    header {
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        z-index: 1;
+    }
+
+    header h1 {
+        position: absolute;
+        top: 1.5%;
+        left: 5%;
+        
+    }
+
+    header img {
+        position: absolute;
+        top: 1.5%;
+        left: -1%;
+
+    }
+
+    header nav ul {
+        position: relative; 
+        top: 9%;
+        left: -25%;
+        font-size: 10px;
+    }
+    
+    /* Definition du footer { Menu pour smartphones ] */
+    footer {
+        position: absolute;
+        bottom: -300%;
+        display:flex;
+        z-index: 1;
+        /*s'adapte au 1024px*/
+    }
+
+    footer p{
+        right: -750%;
+        width: fit-content;
+    }
+
+    footer nav ul {
+        position: relative; 
+        top: 0.4em;
+        right: -10%;
+        width: 100%;
+        height: 2em;
+        background-size: 2em;
+        background-position: 5%;
+    }
+
+    #contact form {
+        position: absolute;
+        top: 77%;
+        left: 78%;
+        transform: translate(-50%, -50%);
+        width: 35%;
+        height: 35%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cv {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        width: 30%;
+        height: 30%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pres {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        width: 30%;
+        height: 30%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    
+
+}
+
 /* Ne monte pas plus haut que 1024 px media queries */
-@media screen and (max-width: 1024px) and (min-width: 481px) {
+@media screen and (max-width: 1024px) and (min-width: 480px) {
     /* styles pour les écrans dont la largeur est entre 480px et 1024px inclus */
   
 
@@ -1495,10 +1596,9 @@ footer p{
 
     #portfolio .proj p {
         position: absolute;
-        top: -30%;
-        left: 0%;
+        top: -25%;
+        left: 10%;
         width: 100%;
-        font-size: 0.6em;
         height: 90%;
         flex: none;
         order: 0;
@@ -1508,9 +1608,9 @@ footer p{
         justify-content: center;
     }
     #portfolio .proj span {
-        position: absolute;
-        top: 129%;
-        right: 0%;
+        position: relative;
+        top: 75%;
+        right: 45%;
     }
 
     #portfolio .proj1 h4 {
@@ -1529,9 +1629,8 @@ footer p{
 
     #portfolio .proj1 p {
         position: absolute;
-        top: -32%;
+        top: -25%;
         left: 2%;
-        font-size: 0.6em;
         width: 100%;
         height: 90%;
         flex: none;
@@ -1558,9 +1657,8 @@ footer p{
 
     #portfolio .proj2 p {
         position: absolute;
-        top: -32%;
+        top: -28%;
         left: 0%;
-        font-size: 0.6em;
         width: 100%;
         height: 90%;
         flex: none;
@@ -1573,7 +1671,7 @@ footer p{
 
     #portfolio .proj2 span {
         position: absolute;
-        top: 130%;
+        top: 122%;
         left: 2%;
     }
 
@@ -1593,12 +1691,11 @@ footer p{
 
     #portfolio .proj3 p {
         position: absolute;
-        top: -31%;
+        top: -18%;
         left: 0%;
         width: 100%;
         height: 90%;
         flex: none;
-        font-size: 0.6em;
         order: 0;
         flex-grow: 0;
         display: flex;
@@ -1608,7 +1705,7 @@ footer p{
 
     #portfolio .proj3 span {
         position: absolute;
-        top: 129%;
+        top: 110%;
         right: -1%;
     }
 
@@ -1738,649 +1835,6 @@ footer p{
     
 
 }
-
-@media screen and (max-width: 1444px) and (min-width: 1025px) {
-    /* Définition du header { Menu pour Tablettes ] */
-    header {
-        position: absolute;
-        width: 100%;
-        height: 10%;
-        z-index: 1;
-    }
-
-    header h1 {
-        position: absolute;
-        top: 1.5%;
-        left: 5%;
-        
-    }
-
-    header img {
-        position: absolute;
-        top: 1.5%;
-        left: -1%;
-
-    }
-
-    header nav ul {
-        position: relative; 
-        top: 10%;
-        left: -25%;
-        font-size: 10px;
-    }
-    
-    /* Definition du footer { Menu pour Tablettes ] */
-    footer {
-        position: absolute;
-        bottom: -300%;
-        display:flex;
-        z-index: 1;
-        /*s'adapte au 1024px*/
-    }
-
-    footer p{
-        position: absolute;
-        right: -1100%;
-    }
-
-    #contact h3 {
-        font-size: 2em;
-        font-weight: 400;
-        margin-bottom: 1em;
-        position: relative;
-        top: -40%;
-    }
-
-    #contact form {
-        position: absolute;
-        top: 65%;
-        left: 72%;
-        transform: translate(-50%, -50%);
-        width: 35%;
-        height: 35%;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    #contact iframe {
-        position: absolute;
-        top: 15%;
-        left: 15%;
-        width: 70%;
-        height: 25%;
-        border: 2px solid #007CED;
-    }
-
-    #contact .phone svg {
-        position: absolute;
-        top: 52%;
-        left: 10%;
-        width: 7%;
-        height: 7%;
-    }
-
-    #contact .phone p {
-        position: absolute;
-        top: 54%;
-        left: 16%;
-        font-size: 1.5em;
-        color: #D5D5D5;
-    }
-
-
-    #contact .mail svg {
-        position: absolute;
-        top: 62%;
-        left: 10%;
-        width: 7%;
-        height: 7%;
-    }
-
-    #contact .mail p {
-        position: absolute;
-        top: 64%;
-        left: 18%;
-        font-size: 1.5em;
-        color: #D5D5D5;
-    }
-
-    #contact .adresse svg {
-        position: absolute;
-        top: 72%;
-        left: 10%;
-        width: 7%;
-        height: 7%;
-    }
-
-    #contact .adresse p {
-        position: absolute;
-        top: 74%;
-        left: 18%;
-        font-size: 1.5em;
-        color: #D5D5D5;
-    }
-
-    #welcome img {
-        position : absolute;
-        top: 35%;
-        left: 5%;
-        width: 425px;
-        height: 425px;
-    }
-
-    #welcome h1 {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 3em;
-        font-weight: 400;
-        color: #D5D5D5;
-    }
-
-    #welcome h2 {
-        position: absolute;
-        top: 45%;
-        left: 59%;
-        transform: translate(-50%, -50%);
-        font-weight: 400;
-        color: #D5D5D5;
-    }
-
-    #welcome h3 {
-        position: absolute;
-        top: 55%;
-        left: 62%;
-        transform: translate(-50%, -50%);
-        font-weight: 400;
-        color: #D5D5D5;
-    }
-
-    #welcome .btn {
-        position: absolute;
-        top: 72%;
-        left: 42%;
-    }
-
-    #welcome .btn2 {
-        position: absolute;
-        top: 72%;
-        left: 70%;
-    }
-
-    #comp h2 {
-        position: absolute;
-        top: 5%;
-        left: 45%;
-    }
-
-    .bulle1{
-        position: absolute;
-        top: 45%;
-        left: 20%;
-    }
-
-    .bulle2{
-        position: absolute;
-        top: 45%;
-        left: 25%;
-    }
-
-    .bulle3{
-        position: absolute;
-        top: 45%;
-        left: 29%;
-    }
-
-    .bulle4{
-        position: absolute;
-        top: 45%;
-        left: 32%;
-    }
-
-    .bulle5{
-        position: absolute;
-        top: 45%;
-        left: 36%;
-    }
-
-    .bulle6{
-        position: absolute;
-        top: 50%;
-        left: 20%;
-    }
-
-    .bulle7 {
-        position: absolute;
-        top: 50%;
-        left: 24%;
-    }
-
-    .bulle8 {
-        position: absolute;
-        top: 45%;
-        left: 38.5%;
-    }
-
-    .bulle9 {
-        position: absolute;
-        top: 50%;
-        left: 28%;
-    }
-
-    .bulle10 {
-        position: absolute;
-        top: 50%;
-        left: 35%;
-    }
-
-    .bulle11 {
-        position: absolute;
-        top: 55%;
-        left: 20%;
-    }
-
-    .bulle12 {
-        position: absolute;
-        top: 55%;
-        left: 25%;
-    }
-
-    .bulle13 {
-        position: absolute;
-        top: 55%;
-        left: 29.5%;
-    }
-
-    .bulle14 {
-        position: absolute;
-        top: 55%;
-        left: 37%;
-    }
-
-    .bulle15 {
-        position: absolute;
-        top: 60%;
-        left: 20%;
-        width: 175px;
-    }
-
-    .bulle16 {
-        position: absolute;
-        top: 60%;
-        left: 33.5%;
-    }
-
-    .bulle17 {
-        position: absolute;
-        top: 65%;
-        left: 20%;
-    }
-
-    .bulle18 {
-        position: absolute;
-        top: 65%;
-        left: 26%;
-    }
-
-    .bulle19 {
-        position: absolute;
-        top: 65%;
-        left: 34%;
-    }
-
-    .bulle20 {
-        position: absolute;
-        top: 70%;
-        left: 29%;
-    }
-
-    .cv {
-        position: absolute;
-        top: 20%;
-        left: 60%;
-    }
-
-    .bubulle {
-        position: absolute;
-        top: -5%;
-        left: 0%;
-    }
-
-    #portfolio .proj {
-        width: 20%;
-        height: 50%;
-        position: absolute;
-        top: 20%;
-        left: 1%;
-    }
-
-    #portfolio .proj2 {
-        width: 20%;
-        height: 50%;
-        position: absolute;
-        top: 20%;
-        left: 80%;
-    }
-
-    #portfolio .proj3 {
-        width: 20%;
-        height: 50%;
-        position: absolute;
-        top: 20%;
-        left: 28%;
-    }
-
-    #portfolio .proj1 {
-        width: 20%;
-        height: 50%;
-        position: absolute;
-        top: 20%;
-        left: 54%;
-    }
-
-    #portfolio .proj span {
-        position: absolute;
-        top: 85%;
-        left: 2%;
-    }
-
-    #portfolio .proj2 span {
-        position: absolute;
-        top: 80%;
-    }
-
-    #portfolio .proj3 span {
-        position: absolute;
-        top: 82%;
-    }
-}
-
-/*@media screen and (max-width : 481px) {
-    .bulle1 {
-        position : absolute;
-        top: 45%;
-        left: 10%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 45px;
-        display: flex;
-    }
-
-    .bulle2 {
-        position : absolute;
-        top: 45%;
-        left: 15%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle3 {
-        position : absolute;
-        top: 45%;
-        left: 19.5%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle4 {
-        position : absolute;
-        top: 45%;
-        left: 22.5%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle5 {
-        position : absolute;
-        top: 45%;
-        left: 27%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle6 {
-        position : absolute;
-        top: 45%;
-        left: 29.5%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle7 {
-        position : absolute;
-        top: 45%;
-        left: 33.5%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle8 {
-        position : absolute;
-        top: 45%;
-        left: 37.5%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle9 {
-        position : absolute;
-        top: 50%;
-        left: 10%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle10 {
-        position : absolute;
-        top: 50%;
-        left: 17%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle11 {
-        position : absolute;
-        top: 50%;
-        left: 23%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle12 {
-        position : absolute;
-        top: 50%;
-        left: 28.5%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle13 {
-        position : absolute;
-        top: 50%;
-        left: 33.5%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle14 {
-        position : absolute;
-        top: 56%;
-        left: 10%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle15 {
-        position : absolute;
-        top: 56%;
-        left: 15%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle16 {
-        position : absolute;
-        top: 56%;
-        left: 31%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle17 {
-        position : absolute;
-        top: 61%;
-        left: 10%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle18 {
-        position : absolute;
-        top: 61%;
-        left: 17%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle19 {
-        position : absolute;
-        top: 61%;
-        left: 26%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        border-radius: 50px;
-        display: flex;
-    }
-
-    .bulle20 {
-        position : absolute;
-        top: 61%;
-        left: 37%;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        background-clip: text;
-        background: #007CED;
-        height: 3%;
-        width: 50px;
-        border-radius: 50px;
-        display: flex;
-    }  
-}*/
 
 
 
