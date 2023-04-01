@@ -1,0 +1,9 @@
+ALREADY DONE :
+-HTML
+-CSS 
+-SMTP
+TO DO : 
+-RESPONSIVE
+-PHP 
+-SMTP
+-Carousel
