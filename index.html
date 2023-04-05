@@ -170,48 +170,30 @@
                 </div>
 
                <!-- Début du PHP -- 
-                    <?php
-                    // Récupère les données du formulaire
-                    $name = $_POST['name'];
-                    $email = $_POST['email'];
-                    $message = $_POST['message'];
-                    $to = 'evan.saleck@gmail.com';
+    <?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    
+    // Validation des données
+    if (empty($name) || empty($email) || empty($message)) {
+        echo "Veuillez remplir tous les champs du formulaire.";
+    } else {
+        // Envoi du message par email
+        $to = 'destinataire@example.com'; // Remplacez par l'adresse email du destinataire
+        $subject = 'Nouveau message depuis le formulaire de contact';
+        $body = "Nom / Entreprise : $name\n\nEmail : $email\n\nMessage : $message";
+        $headers = "From: $email";
 
-                    // Charge la bibliothèque client Gmail de Google
-                    require_once __DIR__ . '/vendor/autoload.php';
-
-                    // Crée un nouveau client Gmail
-                    $client = new Google_Client();
-                    $client->setApplicationName('Mon application');
-                    $client->setAuthConfig(__DIR__ . '/credentials.json');
-                    $client->setAccessType('offline');
-                    $client->setPrompt('select_account consent');
-
-                    // Crée un nouveau service Gmail
-                    $service = new Google_Service_Gmail($client);
-
-                    // Crée un nouveau message
-                    $strSubject = "Nouveau message de formulaire de contact";
-                    $strRawMessage = "From: {$name} <{$email}>\r\n";
-                    $strRawMessage .= "To: {$to}\r\n";
-                    $strRawMessage .= 'Subject: =?utf-8?B?' . base64_encode($strSubject) . "?=\r\n";
-                    $strRawMessage .= "MIME-Version: 1.0\r\n";
-                    $strRawMessage .= "Content-Type: text/html; charset=utf-8\r\n";
-                    $strRawMessage .= 'Content-Transfer-Encoding: quoted-printable' . "\r\n\r\n";
-                    $strRawMessage .= $message;
-
-                    // Envoie le message
-                    try {
-                        $mime = rtrim(strtr(base64_encode($strRawMessage), '+/', '-_'), '=');
-                        $msg = new Google_Service_Gmail_Message();
-                        $msg->setRaw($mime);
-                        $send_message = $service->users_messages->send("me", $msg);
-                        echo "Votre message a bien été envoyé.";
-                    } catch (Exception $e) {
-                        echo "Une erreur est survenue lors de l'envoi de votre message : " . $e->getMessage();
-                    }
-                    ?>
-
+        if (mail($to, $subject, $body, $headers)) {
+            echo "Votre message a été envoyé avec succès.";
+        } else {
+            echo "Une erreur est survenue lors de l'envoi du message.";
+        }
+    }
+}
+?>
                 Fin du PHP -->
                 <form method="post">
                     <input type="text" name="name" placeholder="Nom / Entreprise">
