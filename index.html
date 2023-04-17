@@ -8,30 +8,62 @@
         <!-- Logo -->
         <link rel="icon" href="img/13.jpg">
         <!-- CSS -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="cssupdate.css">
+        <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.css">
         <!--JS-->
         <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     </head>
     <body>
-
        <header>
-            <nav>
-                <ul>
-                    <li><a href="#haut"><span>Accueil</span></a></li>
-                    <li><a href="#comp">Compétences</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <h1>Evan <span>Saleck</span></h1>
-            <img src="img/13.jpg" alt="photo de profil" title="Evan Saleck">
+        <nav class="desktop-transparent">
+            <ul>
+                <li><a href="#haut"><span>Accueil</span></a></li>
+                <li><a href="#comp">Compétences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Evan <span>Saleck</span></h1>
+        <img src="img/13.jpg" alt="photo de profil" title="Evan Saleck">
+              <nav class="mobile">
+                <a onClick="openNav()"><img draggable="false" src="./img/Burger.svg"></a>
+                <a class="logoMobile" href="index.html"><img draggable="false" src="img/13-image.png"></a>
+                <a href="index.html"><img draggable="false" src="img/Mail.svg"></a>
+              </nav>
+              <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#haut">Accueil</a>
+                    <a href="#comp">Compétences</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+              </div>
+            </div>
+            <script>
+      
+            window.onscroll = function() {scrollFunction()};
+      
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("desktop").style.top = "0";
+                } else {
+                    document.getElementById("desktop").style.top = "-100px";
+                }
+            }
+      
+            function openNav() {
+                document.getElementById("myNav").style.width = "80%";
+            }
+      
+            /* Close when someone clicks on the "x" symbol inside the overlay */
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+      
+            </script>
         </header>
         <main>
-            <div id="overlay">
-                <video autoplay muted loop id="Vid">
-                    <source src="vids/competences.mp4" type="video/mp4">
-                </video>
-            </div>
             <div id="haut"></div>
             
             <section id="welcome">
@@ -39,9 +71,9 @@
                 <h4>Etudiant à L'IUT de Lannion</h4>
                 <img src="img/evan.jpg" alt="photo de profil" title="Evan Saleck">
                 <p>Vous souhaitez recruter un alternant ? <br> 
-                Je suis la pour vous, j'aime apprendre et je suis passionné par la psychologie, la finance, la musique. <br>
+                Je suis la pour vous, j'aime apprendre+. <br>
                 Et bien sûr, plus qu'un métier j'adore développer. <br>
-                N'hésitez pas contactez moi ! </p>
+                N'hésitez pas à me contacter ! </p>
                 <div class="btn"><a href="#contact">Contactez-Moi !</a></div>
                 <div class="btn2"><a href="#portfolio" >Portfolio</a></div>
             </section>
@@ -87,27 +119,38 @@
 
             <section id="portfolio">
                 <h3>Portfolio</h3>
-                <div class="proj">
-                    <h4>Portfolio</h4>
-                    <p>Création d'un site Web afin de me présenter et présenter les projets que j'ai pu mener 
-                        <br> <span><a href="https://github.com/EvanSaleck/Portfolio">Cliquez ici pour voir le code</a></span>
-                    </p>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
 
-                <div class="proj1">
-                    <h4>Développement de Serveur FiveM</h4>
-                    <p>Dans le cadre d'un projet personnel j'ai eu l'occasion de développer sur un serveur FiveM en LUA, HTML, CSS, JS</p>
-                </div>
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-                <div class="proj2">
-                    <h4>Développement de Bot Discord</h4>
-                    <p>Bot permettant l'administration de serveurs Discord<br> <span><a href="https://github.com/EvanSaleck/MiniBotito">Projet toujours en Cours mais le code est disponible sur github (Cliquez ici)</a></span></p>
-                </div>
-
-                <div class="proj3">
-                    <h4>Puissance 4 en C</h4>
-                    <p>Code d'un puissance 4 en C s'affichant sur Terminal et création de son robot pour jouer contre vous grâce à l'algorithme Minimax <span><a href="https://github.com/EvanSaleck/Minimax-Puissance4">Projet toujours en amélioration mais utilisable (Cliquez ici)</a></span></p>
-                </div>
+                <!-- Initialize Swiper -->
+                <script>
+                  var swiper = new Swiper(".mySwiper", {
+                    pagination: {
+                      el: ".swiper-pagination",
+                      clickable: true,
+                      renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + "</span>";
+                      },
+                    },
+                  });
+                </script>
+  
             </section>
 
             <section id="contact">
@@ -230,8 +273,34 @@
                     <li><a href="https://github.com/EvanSaleck">Github</a></li>
                 </ul>
             </nav>
-            <p>© 2020 - Evan Saleck</p>
+            <p>© 2023 - Evan Saleck</p>
         </footer>
     </body>
+
+    <?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    
+    // Validation des données
+    if (empty($name) || empty($email) || empty($message)) {
+        echo "Veuillez remplir tous les champs du formulaire.";
+    } else {
+        // Envoi du message par email
+        $to = 'destinataire@example.com'; // Remplacez par l'adresse email du destinataire
+        $subject = 'Nouveau message depuis le formulaire de contact';
+        $body = "Nom / Entreprise : $name\n\nEmail : $email\n\nMessage : $message";
+        $headers = "From: $email";
+
+        if (mail($to, $subject, $body, $headers)) {
+            echo "Votre message a été envoyé avec succès.";
+        } else {
+            echo "Une erreur est survenue lors de l'envoi du message.";
+        }
+    }
+}
+?>
+
 
 </html>
