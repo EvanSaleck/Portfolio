@@ -92,9 +92,7 @@ a {
 
 
 /*
-
 MENU BURGER
-
 */
 
 .overlay {
@@ -1132,7 +1130,7 @@ footer p{
 
 /* Media Queries */
     /* Tablette 768px x 793px*/
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1200px) {
     #welcome {
         display: flex;
         flex-wrap: nowrap;
@@ -1744,7 +1742,7 @@ footer p{
 }
 
     /* Ordinateur 1440px */
-@media screen and (min-width: 1439px) {
+@media screen and (min-width: 1919px) {
     header .desktop {
         display: flex;
         flex-wrap: nowrap;
@@ -1795,7 +1793,7 @@ footer p{
         flex-wrap: nowrap;
         position: relative; 
         top: 0.6em;
-        left: 87%;
+        left: 148%;
         width: 100%;
         height: 3em;
         background-size: 2em;
@@ -1824,21 +1822,602 @@ footer p{
         text-decoration: none;
     }
 
-    header ul a:hover {
-        border : 1px solid transparent;
-        background: linear-gradient(120deg,#3498db,#8e44ad);
-        animation: color 2s ease-in-out infinite;
-        background-clip: text;
-        -webkit-background-clip:text;
-        color: rgba(255, 255, 255, 0.5);
-        transition: color .2s ease-in-out;
+    #welcome img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        position: absolute;
+        top: 28%;
+        left: 2%;
+        border-radius: 360px;
+        z-index: -1;
+    }
+    
+    #welcome h2 {
+        position: absolute;
+        top: 25%;
+        left: 55%;
+        font-size: 70px;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+    }
+    
+    #welcome h4 {
+        position: absolute;
+        top: 32%;
+        left: 45%;
+        font-size: 50px;
+        font-weight: 700;
+        font-family: 'Poiret One', cursive;
+        color: white;
+        text-align: center;
+    }
+    
+    #welcome p {
+        position: absolute;
+        top: 40%;
+        left: 33%;
+        font-size: 50px;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+    }
+    
+    #welcome .btn {
+        position: absolute;
+        top: 80%;
+        left: 45%;
+        width: 250px;
+        height: 50px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    header ul:hover a:not(:hover) {
-        opacity: 0.3;
-        filter: blur(1px);
-        transition: opacity .2s ease-in-out;
+    #welcome .btn2 {
+        position: absolute;
+        top: 80%;
+        left: 65%;
+        width: 250px;
+        height: 50px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #comp h2 {
+        position: relative;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center; 
+    }
     
+    #comp p {
+        position: relative;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        font-weight: 400;
+        color: #fff;
+        text-align: center; 
+    }
+    
+    #comp #bubulle a {
+        position: relative;
+        width: 100%;
+        height: 10vh;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        font-weight: 400;
+        color: #fff;
+    }
+    
+    .bulle1 {
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+    
+    .bulle2 {
+        position: absolute;
+        top: 35%;
+        left: 21%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+      
+    .bulle3 {
+        position: absolute;
+        top: 35%;
+        left: 32%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+      
+    
+    .bulle4 {
+        position: absolute;
+        top: 35%;
+        left: 43%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+    
+    .bulle5 {
+        position: absolute;
+        top: 40%;
+        left: 11%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+    
+    .bulle6 {
+        position: absolute;
+        top: 40%;
+        left: 22%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+      
+    .bulle7 {
+        position: absolute;
+        top: 40%;
+        left: 33%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+      
+    .bulle8 {
+        position: absolute;
+        top: 40%;
+        left: 44%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+      
+    .bulle9 {
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+      
+    .bulle10 {
+        position: absolute;
+        top: 45%;
+        left: 21%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+      
+    .bulle11 {
+        position: absolute;
+        top: 45%;
+        left: 32%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+      
+    .bulle12 {
+        position: absolute;
+        top: 45%;
+        left: 43%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+      
+    .bulle13 {
+        position: absolute;
+        top: 50%;
+        left: 11%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+      
+    .bulle14 {
+        position: absolute;
+        top: 50%;
+        left: 22%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+    
+    .bulle15 {
+        position: absolute;
+        top: 50%;
+        left: 33%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+      
+    .bulle16 {
+        position: absolute;
+        top: 50%;
+        left: 44%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+      
+    .bulle17 {
+        position: absolute;
+        top: 55%;
+        left: 10%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+    
+    .bulle18 {
+        position: absolute;
+        top: 55%;
+        left: 21%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+    
+    .bulle19 {
+        position: absolute;
+        top: 55%;
+        left: 32%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+      
+    
+    .bulle20 {
+        position: absolute;
+        top: 55%;
+        left: 43%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        background-clip: text;
+        background: #007CED;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        height: 2.25%;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+    
+
+    .cv {
+        position: relative;
+        top: 15%;
+        left: 60%;
+        width: 25%;
+    }
+    
+    .cv img {
+        width: 65%;
+        height: 65%;
+    }
+        
+        .cv-label {
+            color: #007CED;
+            text-align: center;
+            position: relative;
+            left: -17%;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+        
+        .cv-download {
+            background: linear-gradient(90deg, #53E4FF 0%, #007CED 100%);
+            color: #222222;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            position: absolute;
+            top: 100%;
+            left: 20%;
+        }
+    
+    .swiper {
+        position: absolute;
+        top: 13%;
+        width: 45%;
+        height: 80%;
+      }   
+    
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      #portfolio h3 {
+        font-size: 2em;
+      }
+    
+      #portfolio .pres {
+        font-size: 1.4em;
+        text-align: center;
+        margin-left: 20%;
+      }
+    
+      #contact h3 {
+        font-size: 50px;
+      }
+
+      #contact iframe {
+        position: relative;
+        width: 100%;
+        height: 40%;
+        border: 2px solid #007CED;
+    }
+      #contact .phone svg {
+        position: absolute;
+        top: 55%;
+        left: 10%;
+        width: 10%;
+        height: 10%;
+    }
+    
+    #contact .phone p {
+        position: absolute;
+        top: 55%;
+        left: 18%;
+        font-size: 2em;
+        color: #D5D5D5;
+    }
+    
+    #contact .mail svg {
+        position: absolute;
+        top: 67%;
+        left: 10%;
+        width: 10%;
+        height: 10%;
+    }
+    
+    #contact .mail p {
+        position: absolute;
+        top: 66%;
+        left: 19%;
+        font-size: 2em;
+        width: 60%;
+        color: #D5D5D5;
+    }
+    
+    #contact .adresse svg {
+        position: absolute;
+        top: 79%;
+        left: 10%;
+        width: 10%;
+        height: 10%;
+    }
+    
+    #contact .adresse p {
+        position: absolute;
+        top: 78%;
+        left: 19%;
+        font-size: 2em;
+        color: #D5D5D5;
+    }
+    
+    #contact form {
+        position: absolute;
+        top: 70%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        width: 35%;
+        height: 35%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
     }
 
     }
